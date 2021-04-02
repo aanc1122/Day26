@@ -8,11 +8,10 @@ class GetRequestSetHeaders extends React.Component {
     }
     componentDidMount() {
         const headers = {
-            'Authorization': 'Bearer my-token',
-            'My-Custom-Header': 'foobar'
+            'Content-Type': 'application/json'
         };
         axios.get('https://api.npms.io/v2/search?q=react', { headers })
-        .then((response) => this.setState({ totalReactPackages: response.data.total }));
+        .then(response => this.setState({ totalReactPackages: response.data.total }));
     }
     render() {
         const { totalReactPackages } = this.state;

@@ -14,7 +14,7 @@ class GetRequestAsyncAwait extends React.Component {
         const { totalReactPackages } = this.state;
         return (
             <div className="card text-center m-3">
-                <h5 className="card-header">Simple GET Request with Async/Await</h5>
+                <h5 className="card-header">GET Request with Async/Await</h5>
                 <div className="card-body">Total packages: {totalReactPackages}</div>
             </div>
         );

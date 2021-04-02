@@ -7,7 +7,7 @@ class DeleteRequest extends React.Component {
         this.state = { status: null };
     }
     componentDidMount() {
-        axios.delete('https://jsonplaceholder.typicode.com/posts/1',)
+        axios.delete('https://jsonplaceholder.typicode.com/posts/1')
         .then(() => this.setState({ status: 'Delete successful' }));
     }
     render() {

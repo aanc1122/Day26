@@ -14,7 +14,7 @@ class PostRequestSetHeaders extends React.Component {
             'My-Custom-Header': 'foobar'
         };
         axios.post('https://reqres.in/api/articles', article, { headers })
-        .then((response) => this.setState({ articleId: response.data.id }))
+        .then(response => this.setState({ articleId: response.data.id }))
 
     }
     render() {
